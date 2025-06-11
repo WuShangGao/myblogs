@@ -1,0 +1,50 @@
+# .gitattributes for Hugo project
+
+# Ensure consistent text encoding and line endings
+* text=auto eol=lf
+
+# Explicitly define text files
+*.md     text
+*.html   text
+*.css    text
+*.scss   text
+*.js     text
+*.json   text
+*.toml   text
+*.yaml   text
+*.yml    text
+*.xml    text
+
+# Treat images and binary files as binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.svg    text
+*.webp   binary
+*.ico    binary
+
+# Font files
+*.ttf    binary
+*.woff   binary
+*.woff2  binary
+*.eot    binary
+
+# Audio/Video (if any)
+*.mp3    binary
+*.mp4    binary
+*.ogg    binary
+*.webm   binary
+
+# Hugo-specific
+/public/**     binary
+/resources/**  binary
+
+# Prevent linguist from analyzing/mining vendor themes
+themes/** linguist-vendored
+
+# Lock line endings for shell scripts
+*.sh     text eol=lf
+
+# Treat Hugo executable as binary
+hugo     binary
