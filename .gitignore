@@ -1,0 +1,53 @@
+# Hugo .gitignore
+
+# Hugo generated files
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# Executable and binary files
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node-related files and folders
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+
+# Build artifacts
+/dist/
+/.tmp/
+
+# Netlify/Vercel CLI
+.netlify/
+.vercel/
+
+# Environment variables
+.env
+.env.*
+
+# PostCSS-related
+.postcssrc
+postcss.config.js
+postcss.config.cjs
+postcss.config.mjs
+
+# Sass/SCSS cache and temp
+.sass-cache/
+.cache/
+*.css.map
+*.scssc
